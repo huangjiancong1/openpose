@@ -5,7 +5,7 @@ OpenPose - Installation and FAQ
 1. [Operating Systems](#operating-systems)
 2. [Requirements](#requirements)
 3. [Clone and Update the Repository](#clone-and-update-the-repository)
-4. [Installation](#Installatiion)
+4. [Installation](#Ubuntu (3 method concluding CMake Script and Manual))
 5. [FAQ](#faq)
 
 
@@ -14,7 +14,7 @@ OpenPose - Installation and FAQ
 **Ubuntu** 14 and 16.
 OpenPose can be e Update the system kernel.
 ```bash
-gsudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get autoremove
 ```
 
 
