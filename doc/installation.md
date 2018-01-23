@@ -152,6 +152,17 @@ You just need to remove the OpenPose folder, by default called `openpose/`. E.g.
 **A**: Most probably cuDNN is not installed/enabled, the default Caffe model uses >12 GB of GPU memory, cuDNN reduces it to ~1.5 GB.
 
 
+**Q: Out of memory error** - I get an error similar to: `/sbin/ldconfig.real: /usr/lib/nvidia-375/libEGL.so.1 not a symbol link
+/sbin/ldconfig.real: /usr/lib32/nvidia-375/libEGL.so.1 not a symbol link`.
+
+**A**:
+    ```
+    sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
+    sudo mv /usr/lib32/nvidia-375/libEGL.so.1 /usr/lib32/nvidia-375/libEGL.so.1.org
+    sudo ln -s /usr/lib/nvidia-375/libEGL.so.375.39 /usr/lib/nvidia-375/libEGL.so.1
+    sudo ln -s /usr/lib32/nvidia-375/libEGL.so.375.39 /usr/lib32/nvidia-375/libEGL.so.1
+    ```
+
 
 **Q: Low speed** - OpenPose is quite slow, is it normal? How can I speed it up?
 
