@@ -157,6 +157,7 @@ You just need to remove the OpenPose folder, by default called `openpose/`. E.g.
 
 **A**:
     ```bash
+    
     sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
     
     sudo mv /usr/lib32/nvidia-375/libEGL.so.1 /usr/lib32/nvidia-375/libEGL.so.1.
