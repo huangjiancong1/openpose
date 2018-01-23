@@ -5,7 +5,7 @@ OpenPose - Installation and FAQ
 1. [Operating Systems](#operating-systems)
 2. [Requirements](#requirements)
 3. [Clone and Update the Repository](#clone-and-update-the-repository)
-4. [Installation](# Ubuntu (3 method concluding CMake Script and Manual))
+4. [Installation](#ubuntu)
 5. [FAQ](#faq)
 
 
@@ -43,8 +43,7 @@ OpenPose can be easily updated by clicking the `synchronization` button at the t
 
 
 
-
-## Ubuntu (3 method concluding CMake Script and Manual)
+## Ubuntu
 ### Installation - CMake
 Recommended installation method. It is simpler and it offers many more customization settings. See [doc/installation_cmake.md](installation_cmake.md). Note that it is a beta version, if it fails, please post in GitHub and use [Installation - Script Compilation](#installation---script-compilation) meanwhile.
 
