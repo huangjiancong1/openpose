@@ -44,12 +44,8 @@ OpenPose can be easily updated by clicking the `synchronization` button at the t
 
 
 ## Ubuntu
-### Installation - CMake
-Recommended installation method. It is simpler and it offers many more customization settings. See [doc/installation_cmake.md](installation_cmake.md). Note that it is a beta version, if it fails, please post in GitHub and use [Installation - Script Compilation](#installation---script-compilation) meanwhile.
-
-
-
-### Prerequisites
+### Installation - CMake (Recommended installation method) 
+Prerequisites
 CUDA, cuDNN, OpenCV and Atlas must be already installed on your machine:
 
     1. [CUDA](https://developer.nvidia.com/cuda-80-ga2-download-archive) must be installed. You should reboot your machine after installing CUDA.
@@ -58,7 +54,7 @@ CUDA, cuDNN, OpenCV and Atlas must be already installed on your machine:
     4. In addition, OpenCV 3 does not incorporate the `opencv_contrib` module by default. Assuming you have OpenCV 3 compiled with the contrib module and you want to use it, append `opencv_contrib` at the end of the line `LIBRARIES += opencv_core opencv_highgui opencv_imgproc` in the `Makefile` file.
     5. Atlas can be installed with `sudo apt-get install libatlas-base-dev`. Instead of Atlas, you can use OpenBLAS or Intel MKL by modifying the line `BLAS := atlas` in the same way as previosuly mentioned for the OpenCV version selection.
 
-
+It is simpler and it offers many more customization settings. See [doc/installation_cmake.md](installation_cmake.md). Note that it is a beta version, if it fails, please post in GitHub and use [Installation - Script Compilation](#installation---script-compilation) meanwhile.
 
 ### Installation - Script Compilation
 Build Caffe & the OpenPose library + download the required Caffe models for Ubuntu 14.04 or 16.04 (auto-detected for the script) and CUDA 8:
