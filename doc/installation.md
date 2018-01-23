@@ -45,7 +45,7 @@ OpenPose can be easily updated by clicking the `synchronization` button at the t
 
 ## Ubuntu
 ### Installation - CMake (Recommended installation method) 
-Prerequisites
+**Prerequisites**
 CUDA, cuDNN, OpenCV and Atlas must be already installed on your machine:
 
     1. [CUDA](https://developer.nvidia.com/cuda-80-ga2-download-archive) must be installed. You should reboot your machine after installing CUDA.
@@ -63,7 +63,19 @@ bash ./ubuntu/install_caffe_and_openpose_if_cuda8.sh
 ```
 **Highly important**: This script only works with CUDA 8 and Ubuntu 14 or 16. Otherwise, see [doc/installation_cmake.md](installation_cmake.md) or [Installation - Manual Compilation](#installation---manual-compilation).
 
-
+Or you can set up the process
+Install CUDA
+```bash
+bash ./ubuntu/install_cuda.sh
+```
+Install CUDNN
+```bash
+bash ./ubuntu/install_cudnn.sh
+```
+Install CAFFE AND OpenPose
+```bash
+bash ./ubuntu/install_caffe_and_openpose_if_cuda8.sh
+```
 
 ### Installation - Manual Compilation
 Alternatively to the script installation, if you want to use CUDA 7, avoid using sh scripts, change some configuration labels (e.g. OpenCV version), etc., then:
