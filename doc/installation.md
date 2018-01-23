@@ -156,7 +156,7 @@ You just need to remove the OpenPose folder, by default called `openpose/`. E.g.
 /sbin/ldconfig.real: /usr/lib32/nvidia-375/libEGL.so.1 not a symbol link`.
 
 **A**:
-    ```bash
+
     
     sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
     
@@ -166,7 +166,7 @@ You just need to remove the OpenPose folder, by default called `openpose/`. E.g.
     
     sudo ln -s /usr/lib32/nvidia-375/libEGL.so.375.39 /usr/lib32/nvidia-375/libEGL.so.1
     
-    ```
+
 
 
 **Q: Low speed** - OpenPose is quite slow, is it normal? How can I speed it up?
