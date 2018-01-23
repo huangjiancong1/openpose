@@ -44,6 +44,16 @@ OpenPose can be easily updated by clicking the `synchronization` button at the t
 
 
 ## Ubuntu
+**Prerequisites**
+Fresh the compile dependence environment of caffe
+```bash
+sudo apt-get install libatlas-base-dev
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev
+sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler
+sudo apt-get install python-dev python-numpy python-scipy python-matplotlib
+```
+
+
 ### Installation - CMake (Recommended installation method) 
 **Prerequisites**
 CUDA, cuDNN, OpenCV and Atlas must be already installed on your machine:
@@ -64,6 +74,7 @@ bash ./ubuntu/install_caffe_and_openpose_if_cuda8.sh
 **Highly important**: This script only works with CUDA 8 and Ubuntu 14 or 16. Otherwise, see [doc/installation_cmake.md](installation_cmake.md) or [Installation - Manual Compilation](#installation---manual-compilation).
 
 Or you can set up the process
+
 Install CUDA
 ```bash
 bash ./ubuntu/install_cuda.sh
